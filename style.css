@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(209, 228, 244);
+}
+
+.mainDiv{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 1rem;
+    padding: 1rem;
+    width: 77vw;
+    height: 100%;
+    margin: auto;
+}
+
+.gridItem{
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.gridItem h3{
+    margin-top: 20px;
+    margin-bottom: 15px;
+} 
+
+.name{
+    font-size: medium;
+}
+
+.gridItem3 .name, .gridItem4 .name{
+    color: rgb(49, 49, 49);
+}
+
+.gridItem1 .name, .gridItem2 .name, .gridItem5 .name, .gridItem1 h3, .gridItem2 h3, .gridItem5 h3{
+    color: white;
+}
+
+.gridItem1 .details, .gridItem2 .details, .gridItem5 .details{
+    color: rgba(255, 255, 255, 0.68);
+}
+
+.gridItem3 h3, .gridItem4 h3{
+    color: rgb(90, 89, 89);
+}
+
+.details{
+    color: rgb(116, 114, 114);
+    line-height: 1.3rem;
+}
+
+.verified{
+    color: rgb(157, 157, 157);
+    font-size:small;
+}
+
+.gridItem1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color:#7541c8;
+}
+
+.gridItem2{
+    background-color: #48556a;
+}
+
+.gridItem3{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gridItem3, .gridItem4{
+    background-color: whitesmoke;
+
+}
+
+
+.gridItem5{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: #19212e;
+}
